@@ -1,0 +1,41 @@
+.img {
+    position: sticky;
+    float: left;
+    margin: 50px;
+    border: dotted 1em;
+}
+.img2 {
+    position: sticky;
+    float: right;
+    margin: 50px;
+    border-top: solid brown 0.5em;
+    border-bottom: solid brown 0.5em;
+}
+
+.ul2 {
+    list-style-type: circle;
+}
+dt {
+    background-color: red;
+    color: red;
+}
+
+dd {
+    color: white; 
+    font-style: italic;
+}
+
+th {
+    background-color:lightgreen;
+   
+    float: right;
+    
+}
+
+td {
+    margin: 12px;
+    padding: 12px;
+    font-size: 0.75%;
+    
+    float: right;
+}
