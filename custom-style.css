@@ -26,6 +26,21 @@ ul {
     width: 50%;
   }
 
+  nav {
+      float: left; 
+      margin-bottom: 30px;
+      border: 60px;
+      display: inline-block;
+      text-indent: 50px;
+  }
+  li {
+    float: left; 
+    margin: 10px;
+    list-style-type: circle;
+    display: inline-block;
+    text-indent: 50px;
+  }
+
 /* Header-tyylit */
 
 .container h1 {
@@ -88,7 +103,7 @@ header nav {
       border-bottom: #a4bd39 3px solid;
 }
 #showcase h1 {
-    font-size: 60px;
+    
     margin-top: 100px;
 }
 #showcase p {
@@ -133,6 +148,16 @@ text-align: initial;
 
 /* Showcase2 */
 
+@media all and (max-width: 675px) {
+
+    a.alignleft {
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+     }
+    }
+
 #showcase2 {
     background-color: #35424a;
     text-align: center;
@@ -145,9 +170,7 @@ text-align: initial;
     margin-top: 60px;
     margin-bottom: 60px;
 }
-#showcase2 p {
-    font-size: 22px;
-}
+
 
 /* Boxes */
 
