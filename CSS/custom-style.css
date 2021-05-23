@@ -1,29 +1,40 @@
 * {
     box-sizing: border-box;
 }
+
 body {
-    font-size: 15px/1.5;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
 }
+
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .container2 {
     width: 80%;
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
 }
+
+#middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .middle {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+}
 
 nav {
       float: left; 
@@ -31,28 +42,27 @@ nav {
       border: 60px;
       display: inline-block;
       text-indent: 50px;
-  }
+}
+
 .nav2 {
-    
     border-left: solid 5px #a4bd39;
     text-align: center;
-    
 }
+
 .nav3 {
-    
     border: solid 5px #a4bd39;
     text-align: center;
     fill: yellowgreen;
     background-color: yellowgreen;
-    
 }
+
 li {
     float: left; 
     margin: 10px;
     list-style-type: circle;
     display: inline-block;
     text-indent: 50px;
-  }
+}
 
 /* Header-tyylit */
 
@@ -73,9 +83,8 @@ li {
     color: #a4bd39;
     -webkit-text-stroke: 0.9px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.712);
-    
-    
 }
+
 header {
     background-color: #35424a;
     color: #f4f4f4;
@@ -83,6 +92,7 @@ header {
     min-height: 70px;
     border-bottom: #a4bd39 3px solid;
 }
+
 header #branding img {
     display: block;
     float: left;
@@ -90,20 +100,24 @@ header #branding img {
     margin: 0px 10px 0px 10px;
     height: 35px;
 }
+
 header a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
 }
+
 header li {
     display: inline;
     padding: 0 20px;
 }
+
 header nav {
     float: right;
     margin-top: 15px;
 }
+
 #branding img {
     display: block;
     float: left;
@@ -129,15 +143,16 @@ header nav {
     background-color: greenyellow;  
     text-align: center;
     color: white;
-      /* Prefix required. Even Firefox only supports the -webkit- prefix */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-      border-bottom: #a4bd39 3px solid;
+    /* Prefix required. Even Firefox only supports the -webkit- prefix */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    border-bottom: #a4bd39 3px solid;
 }
+
 #showcase h1 {
-    
     margin-top: 100px;
 }
+
 #showcase p {
     font-size: 22px;
 }
@@ -148,10 +163,12 @@ header nav {
     text-align: left;
     padding: 10px;
 }
+
 .container {
     padding: 10px;
     align-self: center;
 }
+
 #newsletter {
     float: right;
     background-color: white;
@@ -164,15 +181,18 @@ header nav {
     float: left;
     height: 100px;
 }
+
 #newsletter h2 {
 text-align: initial;
     width: 50%;
 }
+
 #newsletter form {
     
     text-align: left;
     width: 50%;
 }
+
 #newsletter input[type="email"] {
     width: 60%;
     padding:  4px;
@@ -182,36 +202,43 @@ text-align: initial;
 /* Showcase2 */
 
 @media all and (max-width: 675px) {
-
     a.alignleft {
        width: 100%;
        margin-left: auto;
        margin-right: auto;
        text-align: center;
      }
-    }
-    @media all and (max-width: 499px) {
+}
+
+@media all and (max-width: 499px) {
         #img1 {display: none;}
         #img2 {display: block;}
-    }
+}
 
 #showcase2 {
     background-color: #35424a;
     text-align: center;
     color: white;
     padding: 10px;
-      /* Prefix required. Even Firefox only supports the -webkit- prefix */
+    /* Prefix required. Even Firefox only supports the -webkit- prefix */
 }
+
 #showcase2 h1 {
     font-size: 60px;
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
-
 /* Boxes */
 
 #boxes {
+    min-height: 350px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+#boxes2 {
     min-height: 350px;
     background-color: white;
     text-align: center;
@@ -229,11 +256,21 @@ text-align: initial;
     padding-bottom: 60px;
 }
 
+#boxes3 {
+    min-height: 350px;
+    background-color: #35424a;
+    text-align: center;
+    color: white;
+    padding: 6px;
+    padding-bottom: 60px;
+}
+
 #boxes1 p {
   padding: 6px;
   padding-bottom: 6px;
 
 }
+
 #boxes1 h1 {
     font-size: 60px;
     margin-top: 100px;
@@ -244,6 +281,7 @@ text-align: initial;
 #box2 {
     background-color: yellowgreen;
 }
+
 #footer {
     text-align-last: center;
     background-color: rgba(0, 0, 0, 0.795);
@@ -251,5 +289,4 @@ text-align: initial;
     border-bottom: solid 1px;
     border-color: yellowgreen;
     color: white;
-    
 }
