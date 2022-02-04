@@ -5,31 +5,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="description" content="Testisivu, initial-scale=1.0">
     <meta name="keywords" content="html template, width=width-device">
     <title>Testisivu</title>
 </head>
-
 <body>
-    <div id="ensin"></div>
-    <div id="tunniste">
-        <p>Content</p>
-        <p>Form:</p>
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
-        </form>
-        <script>
-            document.getElementById("tunniste").innerHTML = "Terrrrve";
-            document.getElementById("ensin").innerHTML = "Moroooo";
-            console.log("testi");
+    <div>
+        <div>
+            <h1>Lasketaan numerot:</h1>
+        </div>
+            Laita ensi numerosi : <br>
+            <input type="number" id="Text1" name="TextBox1">
+            <br>
+            Laita toinen numerosi : <br>
+            <input type="number" id="Text2" name="TextBox2">
+            <br>
+            Tulos : <br>
+            <input type="number" id="txtresult" name="TextBox3">
+            <br>
+        <input type="button" name="clickbtn" value="Näytä tulos" onclick="laske_numero()">
+
+        <script type="text/javascript">
+            function laske_numero(){
+            var first_number = parseInt(document.getElementsById("Text1").value);
+            var second_number = parseInt(document.getElementsById("Text2").value);
+            var result = first_number + second_number;
+            document.getElementById("txtresult").innerHTML = result;    
+            }
         </script>
     </div>
-</body>
-
 
 
 <footer>
