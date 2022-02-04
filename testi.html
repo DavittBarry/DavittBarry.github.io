@@ -14,22 +14,21 @@
         <div>
             <h1>Lasketaan numerot:</h1>
         </div>
-            Laita ensi numerosi : <br>
+            Laita numerosi : <br>
             <input type="text" id="Text1" >
-            <br>
-            Laita toinen numerosi : <br>
-            <input type="text" id="Text2" >
             <br>
         <button type="button" onclick="summaa()">Summaa</button>
 
-        <p id="txtresult"></p>
+        <p id="laskelma"></p>
 
         <script>
             function summaa(){
-            var first_number = Number(document.getElementById("Text1").value)
-            var second_number = parseInt(document.getElementById("Text2").value)
-            var result = first_number + second_number;
-            document.getElementById("txtresult").innerHTML = `${first_number + second_number}`;    
+            const first_number = Number(document.getElementById("Text1").value)
+            for (var i = 1; i < 11; i++) {
+                let total = first_number * [i];
+                console.log(total)
+            }
+            document.getElementById("laskelma").innerHTML = ``;    
             }
         </script>
     </div>
