@@ -11,6 +11,6 @@ function syotteenLukeminen(takaisinkutsu) {
     takaisinkutsu(nimi);
 }
 
-/ Tulostetaan sen nimi ja tervehdys.
+// Tulostetaan sen nimi ja tervehdys.
 
 syotteenLukeminen(tervehdys);
